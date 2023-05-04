@@ -1,0 +1,23 @@
+@keyframes subir {
+    from {
+        top: 245px;
+        backdrop-filter: none;
+    }
+
+    to {
+        top: 0;
+         backdrop-filter: blur(2px);
+    }
+}
+
+@keyframes descer {
+    from {
+        top: 0;
+        backdrop-filter: none;
+    }
+
+    to {
+        top: 245px;
+        backdrop-filter: blur(2px);
+    }
+}
