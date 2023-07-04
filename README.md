@@ -1,2 +1,2 @@
 # Site pessoal
-O site para eu mostrar minhas habilidades
+Meu site profissional
