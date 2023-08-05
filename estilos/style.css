@@ -28,6 +28,24 @@
     width: 70vw;
 }
 
+#p-1, #p-2, #p-3 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#p-1 {
+    background-image: url("../imagens/sitefinnass.png");
+}
+
+#p-2 {
+    background-image: url("../imagens/despesas.png");
+}
+
+#p-3 {
+    background-image: url("../imagens/twitterclone.png");
+}
+
 p, li, a {
     font-size: 1.08em;
 
@@ -54,13 +72,18 @@ p, li, a {
     color: var(--texto_contraste);
 }
 
-.header-links {
-    cursor: pointer;
-}
+.textos-card {
+    font-size: 1em;
+    line-height: 1.5;
+    text-indent: 20px;
+    width: 90%;
+    margin: auto;
 
-.header-links:hover {
-    text-shadow: 0px 0px 3px rgba(78, 78, 78, 0.288) ;
-    transition: 0.5s;
+    text-align: justify;
+
+    font-family: 'Tilt Neon', cursive;
+
+    color: var(--texto_contraste);
 }
 
 header {
@@ -71,22 +94,6 @@ header {
     box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.199);
 
     background-color: rgb(248, 248, 248);
-}
-
-header li::after {
-    content: " / ";
-}
-
-header ul {
-    display: flex;
-
-    list-style-type: none;
-}
-
-header ul li {
-    margin-right: 10px;
-
-    color: var(--textos);
 }
 
 header h1 {
@@ -135,6 +142,10 @@ header h1 {
     box-shadow: 0px 0px 5px 1px var(--azul_contraste);
 }
 
+.informacoes-inicio .card {
+    margin-bottom: 90px;
+}
+
 .inicio .informacoes-inicio ul li a {
     color: white;
 }
@@ -154,11 +165,11 @@ header h1 {
     justify-content: space-around;
     flex-flow: row wrap;
 
-    height: 545px;
     padding: 10px;
 }
 
 .exibicao .card {
+    position: relative;
     height: 245px;
     width: 300px;
     overflow: hidden;
@@ -168,6 +179,9 @@ header h1 {
     background-image: url("../imagens/icone_logo.png");
     background-size: cover;
     background-repeat: no-repeat;
+
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 5px;
 }
 
 .exibicao .card .card-texto {
@@ -180,8 +194,12 @@ header h1 {
     width: 100%;
 }
 
+.card-texto h1 {
+    margin-bottom: 10px;
+}
+
 .exibicao .card .card-texto h1, .exibicao .card .card-texto p  {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .exibicao .card .card-texto a {
@@ -213,6 +231,28 @@ header h1 {
     padding: 65px;
 
     background-color: var(--fundo_segundario);
+}
+
+.habilidades .container {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    margin: auto;
+
+    width: 85%;
+}
+
+.habilidades .container > li {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #363636;
+    width: 85px;
+    padding: 3px;
+
+    text-align: center;
+    color: white;
+
+    border-radius: 5px;
 }
 
 .habilidades > p {
