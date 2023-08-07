@@ -172,6 +172,7 @@ header h1 {
     position: relative;
     height: 245px;
     width: 300px;
+    margin: 10px;
     overflow: hidden;
 
     background-color: #363636;
@@ -248,6 +249,7 @@ header h1 {
     background-color: #363636;
     width: 85px;
     padding: 3px;
+    margin: 5px;
 
     text-align: center;
     color: white;
@@ -284,6 +286,7 @@ footer ul {
 footer ul li {
     display: inline-block;
     margin-right: 15px;
+    
 }
 
 
@@ -295,4 +298,29 @@ footer a {
     text-decoration: none;
     border-radius: 5px;
     background-color: #242424;
+}
+
+@media screen and (width <= 910px) {
+   #img-inicio {
+        display: none;
+   }
+
+   .inicio {
+        justify-content: space-around;
+   }
+
+   .inicio .informacoes-inicio {
+        margin: auto;
+        width: 50vw;
+    }
+
+    .inicio .informacoes-inicio .card {
+        margin-bottom: 58px;
+        margin-left: 20%;
+        margin-top: 58px;
+    }
+
+    footer ul li {
+        margin-top: 20px;
+    }
 }
